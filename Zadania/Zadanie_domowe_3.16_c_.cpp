@@ -2,7 +2,7 @@
 
 using namespace std;
 
-/*
+
 ///zad.3c)
 
 bool funkcja(int a)
@@ -37,7 +37,7 @@ int main()
     int a,b;
     cin>>a>>b;
     funkcja2(a,b);
-}*/
+}
 //inny przyklad
 
 bool funkcja3(int a, int b)
