@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+double f(double x);
+double oblicz(int a,int b,int dl,int n);
+
+int main()
+{
+	// <a,b> 		n = (bedzie podane) ilosc krokow
+    int a = //wpisz ; 	// a
+	int b = //wpisz ;  // b
+	int n = //wpisz ;  // n
+	int dl; //nie zmieniaj
+	
+    dl = ((b-a)/n);
+    
+    oblicz(a,b,dl,n);
+    
+	return 0;
+}
+
+double oblicz(int a,int b,int dl,int n)
+{
+    double sumaPol = 0;
+
+    for(int i=1; i<=3; i++)
+    {
+        sumaPol = sumaPol + ((( (f(a+((i-1)*dl))) + (f(a+(i*dl))) )/2)*dl); //wzor na trapezy
+    }
+    cout << "Suma pola trapezow " << sumaPol <<endl;
+}
+
+double f(double x)
+{
+	return //WPISZ TUTAJ FUNKCJE, PAMIETAJ DUZO NAWIASÓW, c++ nie rozumie 4x tylko (4*x), x do kwadratu to (x*x);
+}
