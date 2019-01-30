@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+double f(double x);
+double oblicz(int a,int b,int dl,int n);
+
+int main()
+{
+	cout << "METODA PROSTOKATOW Z NIEDOMIAREM " <<endl;
+	
+	// <a,b> 		n = (bedzie podane) ilosc krokow
+	
+    int a = //wpisz ; 	// a
+	int b = //wpisz ;  // b
+	int n = //wpisz ;  // n
+	int dl; //nie zmieniaj
+	
+    dl = ((b-a)/n);
+    
+    oblicz(a,b,dl,n);
+    
+	return 0;
+}
+
+double oblicz(int a,int b,int dl,int n)
+{
+    double sumaPol = 0;
+
+    for(int i=0; i<n; i++)
+    {
+        sumaPol = sumaPol + (f(a + (i*dl))); //wzor na trapezy
+    }
+    cout << "Suma pola trapezow " << sumaPol <<endl;
+}
+
+double f(double x)
+{
+	return //WPISZ TUTAJ FUNKCJE, PAMIETAJ DUZO NAWIASÓW, c++ nie rozumie 4x tylko (4*x), x do kwadratu to (x*x);
+}
