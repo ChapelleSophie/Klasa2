@@ -11,10 +11,10 @@ int main()
 	
 	// <a,b> 		n = (bedzie podane) ilosc krokow
 	
-    int a = //wpisz ; 	// a
-	int b = //wpisz ;  // b
-	int n = //wpisz ;  // n
-	int dl; //nie zmieniaj
+    int a = ;	//wpisz  		// a
+	int b = ;	//wpisz   		// b
+	int n = ;	//wpisz   		// n
+	int dl; 	//nie zmieniaj
 	
     dl = ((b-a)/n);
     
@@ -31,7 +31,7 @@ double oblicz(int a,int b,int dl,int n)
     {
         sumaPol = sumaPol + (f(a + (i*dl))); //wzor na trapezy
     }
-    cout << "Suma pola trapezow " << sumaPol <<endl;
+    cout << "Suma pola prostokaow z niedomiarem " << sumaPol <<endl;
 }
 
 double f(double x)
