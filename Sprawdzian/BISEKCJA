@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+float f(float x);
+float pt(float a, float b, float s);
+
+int main()
+{
+	cout << "BISEKCJA" <<endl <<endl;
+
+	int a; /// <--- jesli okreslasz wartosci tutaj, usun cin'a
+	int b; /// <--- jesli okreslasz wartosci tutaj, usun cin'a
+	int s; // NIE ZMIENIAJ
+	
+	cout << "Podaj przedzial ";
+	cin >> a >> b; /// <--- lub podaj w incie
+
+	s = (a+b)/2);
+	pt(a,b,s);
+
+	return 0;
+}
+float pt(float a, float b, float s)
+{
+	float pom;
+	s = ((a+b)/2);
+	cout << "f(a)" << "\t" << "f(b)" << "\t" << "S" << "\t" << "f(s)" << "\t" "a" << "\t" "b" <<endl <<endl;
+	
+	for(int i=0; i < 50; i++)
+	{
+		cout << f(a) << "\t" << f(b) << "\t" << s << "\t" << f(s) << "\t" << a << "\t" << b <<endl;
+		if((f(a))*(f(s)) < 0)
+		{
+			pom = ((b-a)/2);
+			b = b - pom;
+		}
+		else if((f(a))*(f(s)) > 0)
+		{
+			pom = ((b-a)/2);
+			a = a + pom;
+
+		}
+		s = ((a+b)/2);
+		if(f(s) == 0)
+		{
+			pom = i+1;
+			break;
+		}
+	}
+	cout << f(a) << "\t" << f(b) << "\t" << s << "\t" << f(s) << "\t" << a << "\t" << b <<endl;
+	cout << "Miejsce zerowe zostalo znalezione po " << pom << " krokach"<<endl;
+
+}
+
+float f(float x)
+{
+	return //WPISZ TUTAJ FUNKCJE, PAMIETAJ DUZO NAWIASÓW, c++ nie rozumie 4x tylko (4*x), x do kwadratu to (x*x);
+}
