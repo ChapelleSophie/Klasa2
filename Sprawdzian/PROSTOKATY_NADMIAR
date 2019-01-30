@@ -7,7 +7,7 @@ double oblicz(int a,int b,int dl,int n);
 
 int main()
 {
-	cout << "METODA PROSTOKATOW Z NIEDOMIAREM " <<endl;
+	cout << "METODA PROSTOKATOW Z NADMIAREM " <<endl;
 	
 	// <a,b> 		n = (bedzie podane) ilosc krokow
 	
